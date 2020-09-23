@@ -68,7 +68,7 @@ int checkSimStatus () {
 }
 
 
-int writeSim (uint8_t adress, int input_data_uint16_t) {
+int writeSim (uint8_t adress, uint16_t input_data_uint16_t) {
   if (checkSimStatus() == 1) {
     MODEM.sendf("AT+CPBW=%d,\"%d\",,\"%d\"", adress, input_data_uint16_t, input_data_uint16_t );
     if (MODEM.waitForResponse(10000, &response) == 1) {
@@ -85,16 +85,17 @@ int writeSim (uint8_t adress, int input_data_uint16_t) {
 
 
 int readSim (uint8_t adress) {
-  uint16_t _data = 0;
+  char data_string[50];
   int i1, i2, i3, i4;
   if (checkSimStatus() == 1) {
     MODEM.sendf("AT+CPBR=%d", adress);
-    if (adress > 250 || adress < 0){
-      return -1;
+    if (adress > 250 || adress < 0) {
+      if (Serial.available()) {
+        Serial.println("insert a valid address 0 ... 250 ");
+      }
     }
     if (MODEM.waitForResponse(10000, &response) == 1) {
       if (response.startsWith("+CPBR:")) {
-        char data_string[50];
         response.toCharArray(data_string, 50);
         if (4 == sscanf(data_string,
                         "%*[^0123456789]%d%*[^0123456789]%d%*[^0123456789]%d%*[^0123456789]%d",
@@ -107,7 +108,7 @@ int readSim (uint8_t adress) {
         }
       }
     }
-  } else {
-    return -2; //sim not ready
+  } else if (Serial.available()) {
+    Serial.println("sim not ready");
   }
 }
