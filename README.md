@@ -10,8 +10,8 @@ This library contains functions to access the sim card phonebook memory. So you 
 Currently the library contains the following functions:
 - Unlock Sim card
 - Query Sim state
-- Writing a positive integer in the phone book of the sim card
-- Reading positive integers from the phone book of the sim card
+- Writing an uint in the phone book of the sim card
+- Reading uint from the phone book of the sim card
 
 
 ----------
