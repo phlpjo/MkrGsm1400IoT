@@ -25,7 +25,6 @@ Currently the library contains the following functions:
 
 ## **Version**
 
-- Version 1.1.0 -- No changes
 - Version 1.0.0 -- Intial version
 
 ## **Arduino Compatibility**
