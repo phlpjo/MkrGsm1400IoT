@@ -35,7 +35,7 @@ Currently the library contains the following functions:
 
 ## **Installation**
 
-The MkrGsm1400IoT library may be soon installed using the Arduino IDE's Library Manager. To access the Library Manager, in the Arduino IDE's menu select _Sketch->Include Library->Manage Libraries..._. In the Library Manager's search bar type MkrGsm1400IoT then select the "Install" button in the MkrGsm1400IoT entry.
+The MkrGsm1400IoT library be installed using the Arduino IDE's Library Manager. To access the Library Manager, in the Arduino IDE's menu select _Sketch->Include Library->Manage Libraries..._. In the Library Manager's search bar type MkrGsm1400IoT then select the "Install" button in the MkrGsm1400IoT entry.
 
 At the moment this library has to be downloaded manually via github and added to arduino.
 Just download the library, unzip it and add it to the folder _.../Arduino/libraries_ . The _.../Arduino/..._ folder is the one where your Arduino IDE sketches are usually located.
