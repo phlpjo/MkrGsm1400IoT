@@ -3,10 +3,10 @@
 
   This example sketch depneds on the "arduino-libraries/MKRGSM".
   Since the Arduino MKR GSM 1400 has no non-volatile memory,
-  the only way to cache data is to store it on the SIM card.
-  This example sketch writes data to the phonebook directory
+  the only way to cache data is to store it into SIM card.
+  This example sketch writes data to the phonebook, like writing data to an EEPROM
   of the sim card and reads it out and displays it on the serial monitor.
-  So, for example, control commands can be read from the phone book
+  So, for example, in your own code, control commands can be read from the phone book
   after a restart and used in the program code.
 
   but attention: the sim card memory has a limited read-write cycle.
