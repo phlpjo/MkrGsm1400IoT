@@ -47,5 +47,5 @@ So you know how to use the functions of this library, take a look at the example
 ## **Example Code**
 **storeAndReadSimData.ino**
 - Write and read integers from 0 to 65535 to/from the Sim-Card
-- store up to 250 different variable (testet with an O2 nano sim card (german))
+- Store up to 250 different variable (testet with an O2 nano sim card (german))
 
