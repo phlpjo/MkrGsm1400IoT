@@ -9,6 +9,11 @@
   So, for example, control commands can be read from the phone book
   after a restart and used in the program code.
 
+  but attention: the sim card memory has a limited read-write cycle.
+  no warranty for defective sim cards.
+  use these functions with care.
+
+  define your sim pin in the arduino_secrets.h
 
   created 23. Sep 2020
   by Philip Decker
