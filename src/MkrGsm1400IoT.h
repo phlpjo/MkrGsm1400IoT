@@ -7,7 +7,7 @@ void    resetUblox();
 
 int     unlockSim(String pin),
         checkSimStatus(), 
-        writeSim(uint8_t adress, int input_data),
+        writeSim(uint8_t adress, uint16_t input_data),
         readSim(uint8_t adress);
 
 
