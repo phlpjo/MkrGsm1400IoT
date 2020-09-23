@@ -45,4 +45,7 @@ Just download the library, unzip it and add it to the folder _.../Arduino/librar
 So you know how to use the functions of this library, take a look at the examples.
 
 ## **Example Code**
-**storeAndReadSimData.ino** : Write and read integers from 0 to 32.767 to/from the Sim-Card.
+**storeAndReadSimData.ino**
+- Write and read integers from 0 to 65535 to/from the Sim-Card
+- store up to 250 different variable (testet with an O2 nano sim card (german))
+
